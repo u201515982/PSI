@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginStart="50dp"
+    android:layout_marginEnd="50dp"
+    android:id="@+id/layout_setup_user"
+    android:clickable="true"
+    android:focusable="true">
+
+    <LinearLayout
+        android:id="@+id/thenamelayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_marginTop="50dp"
+            android:text="Ingresa tu nombre y apellido"
+            android:fontFamily="@font/ubunturegular"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:id="@+id/myusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nombre"
+            android:maxLines="1"
+            android:imeOptions="actionNext"
+            android:singleLine="true"
+            android:layout_marginTop="15dp"
+            android:padding="5dp"
+            android:background="@drawable/shape_black_sqr"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/thepswtoptext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:layout_marginTop="50dp"
+        android:text="Debe cambiar su contraseña al ingresar por primera vez"
+        android:fontFamily="@font/ubunturegular"
+        android:layout_gravity="center"
+        android:gravity="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp">
+
+        <EditText
+            android:id="@+id/mypassword"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Contraseña"
+            android:padding="5dp"
+            android:background="@drawable/shape_black_sqr"/>
+
+        <ImageButton
+            android:id="@+id/psw_show_hide_SU"
+            android:tag="show"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_visibility_off_24"
+            android:padding="5dp"
+            android:backgroundTint="#00000000"
+            android:tint="#999999"/>
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/mypassword_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Confirmar contraseña"
+        android:layout_marginTop="15dp"
+        android:padding="5dp"
+        android:background="@drawable/shape_black_sqr"/>
+
+    <TextView
+        android:id="@+id/psw_match"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#A70000"
+        android:text=" "
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/first_ok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_gravity="center"
+        android:textSize="18sp"
+        android:text="ok"/>
+
+</LinearLayout>

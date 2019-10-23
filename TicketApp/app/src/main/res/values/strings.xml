@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Sistemas PSI</string>
+    <string name="welcome_text">Welcome</string>
+    <string name="action_all">Todo</string>
+    <string name="action_pending">Pendiente</string>
+    <string name="action_closed">Cerrado</string>
+    <string name="action_logout">LOG OUT</string>
+    <string-array name="tipos_array">
+        <item>Soporte</item>
+        <item>Impresora</item>
+        <item>SAPS</item>
+        <item>SISGED</item>
+        <item>SIAF</item>
+    </string-array>
+    <string-array name="piso1">
+        <item>MESA DE PARTES</item>
+        <item>RECEPCION</item>
+        <item>SALA DE REUNIONES</item>
+    </string-array>
+    <string-array name="piso25">
+        <item>DIR</item>
+        <item>OS</item>
+        <item>OEP</item>
+    </string-array>
+    <string-array name="piso6">
+        <item>DGR</item>
+        <item>OTR</item>
+        <item>OCAT</item>
+        <item>OPPS</item>
+    </string-array>
+    <string-array name="piso7">
+        <item>OAJ</item>
+        <item>OCI</item>
+        <item>SECRETARIA TECNICA</item>
+    </string-array>
+    <string-array name="piso8">
+        <item>LOGISTICA</item>
+        <item>FISCALIZACION</item>
+        <item>PATRIMONIO</item>
+        <item>ALMACEN</item>
+        <item>SERVICIOS GENERALES</item>
+        <item>EJECUCION CONTRACTUAL</item>
+        <item>UIS</item>
+    </string-array>
+    <string-array name="piso9">
+        <item>RRHH</item>
+        <item>TESORERIA</item>
+        <item>CONTABILIDAD</item>
+        <item>OAF</item>
+    </string-array>
+    <string-array name="piso10">
+        <item>DIRECCION EJECUTIVA</item>
+        <item>SALA DE REUNIONES</item>
+    </string-array>
+    <string-array name="areaspace">
+        <item>&lt;area&gt;</item>
+    </string-array>
+</resources>

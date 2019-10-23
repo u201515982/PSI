@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.psi.ticketapp.ScrollingActivity"
+    android:background="@color/colorPrimaryDark">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="330dp"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        android:background="@color/colorPrimaryDark">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimaryDark"
+            app:expandedTitleGravity="center"
+            app:layout_collapseMode="pin"
+            app:layout_scrollFlags="scroll|enterAlwaysCollapsed|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="57dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fab_margin"
+        android:background="#000000"
+        android:foregroundTint="#000000"
+        android:src="@drawable/baseline_add_white_36"
+        android:tint="#000000"
+        app:backgroundTint="#FFFFFF"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end"
+        app:maxImageSize="40dp" />
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/content_scrolling" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#000000"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <Button
+            android:id="@+id/b1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_white"
+            android:fontFamily="sans-serif"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Todo"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_white"
+            android:fontFamily="sans-serif"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Pendiente"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_white"
+            android:fontFamily="sans-serif"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="En Curso"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/b4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:layout_weight="1"
+            android:background="@drawable/ripple_white"
+            android:fontFamily="sans-serif"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="Historial"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

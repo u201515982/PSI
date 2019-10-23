@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "898503211109",
+    "firebase_url": "https://sistemadetickets-9b935.firebaseio.com",
+    "project_id": "sistemadetickets-9b935",
+    "storage_bucket": "sistemadetickets-9b935.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:898503211109:android:532cf32b3c76236b",
+        "android_client_info": {
+          "package_name": "com.psi.ticketapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "898503211109-53o10mlu6s6cqprc6bhtfr8m0puqp0c7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA30pKtCauJcRdv2BI0QsuJQSUAzZM0-Kg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "898503211109-53o10mlu6s6cqprc6bhtfr8m0puqp0c7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

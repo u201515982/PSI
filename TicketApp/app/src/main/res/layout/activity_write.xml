@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/layout_write">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+        <ImageButton
+            android:id="@+id/write_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/baseline_clear_24"
+            android:backgroundTint="@color/colorPrimary"
+            android:tint="@color/colorWhite"/>
+
+        <TextView
+            android:id="@+id/write_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Descripción"
+            android:gravity="center"/>
+
+        <ImageButton
+            android:id="@+id/write_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:src="@drawable/baseline_send_24"
+            android:backgroundTint="@color/colorPrimary"
+            android:tint="@color/colorWhite"
+            android:layout_alignParentEnd="true"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/large_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorWhite"
+        android:hint="Ingresar una descripción"
+        android:textColorHint="#696969"
+        android:gravity="start"
+        android:padding="15dp"/>
+
+</LinearLayout>
